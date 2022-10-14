@@ -1,8 +1,10 @@
+#include <stdio.h>
 #include <unisted.h>
+
 /**
  * main - Entry
  *
- * Return: 1 Always
+ * Return: 1 Always returned
  */
 int main(void)
 {
