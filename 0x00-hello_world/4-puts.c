@@ -1,8 +1,9 @@
-#include <studio.h>
+#include <stdio.h>
+
 /**
- * main - Entry
+ * main - Enter
  *
- *Return: 0 always
+ * Return: 0 Always
  */
 int main(void)
 {
