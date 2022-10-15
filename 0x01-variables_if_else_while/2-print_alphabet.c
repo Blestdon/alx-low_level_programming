@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints alphabets
+ * main - prints alphabet.
  *
- * Return: Aways 0
+ * Return: Aways 0 (success)i
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putchar(alp[1]);
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
