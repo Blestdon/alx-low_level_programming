@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /**
- *main - Print numbers from 0 to 99.
+ * main - Print numbers from 0 to 99.
  *
- * Return: Always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
 	int i, o, u, h, op1, op2;
 
-	i = o = u = h = op1 = op2;
 	i = o = u = h = 48;
 	while (h < 58)
 {
@@ -44,7 +43,6 @@ int main(void)
 	}
 	h++;
 }
-
 putchar('\n');
 return (0);
 }
