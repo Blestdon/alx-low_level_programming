@@ -9,7 +9,7 @@ void print_triangle(int n)
 {
 	int r, tri;
 
-	if (n > o)
+	if (n > 0)
 	{
 		for (r = 1; r < = n; r++)
 		{
