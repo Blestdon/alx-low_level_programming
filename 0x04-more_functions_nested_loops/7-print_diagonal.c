@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - draws diagonal line
- * @n: num of '\'to be printed
+ * @n: number of '\' to be printed
  */
 void print_diagonal(int n)
 {
@@ -17,5 +17,6 @@ void print_diagonal(int n)
 			_putchar(' ');
 
 		_putchar('\\');
+		_putchar('\n');
 	}
 }
