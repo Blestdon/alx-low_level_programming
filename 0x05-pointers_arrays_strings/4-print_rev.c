@@ -10,7 +10,7 @@ void print_rev(char *s)
 
 	while (s[in] != '\0')
 	in++;
-	for (in = in - 1; in <= 0; in--)
+	for (in = in - 1; in >= 0; in--)
 		putchar(p[in]);
 		putchar('\n');
 }
