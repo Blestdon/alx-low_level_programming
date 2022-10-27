@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
+ * _strncat - concatenates two strings with n bytes
  * @dest: copy to
  * @src: copy from
- * @n: num of char to be copied
+ * @n: number of char to be copied
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
