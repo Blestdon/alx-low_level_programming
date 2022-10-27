@@ -16,7 +16,7 @@ char *cap_string(char *str)
 			b++;
 		if (str[b - 1] == ' ' ||
 			str[b - 1] == '\t' ||
-			str[b - 1] == '\n' ||
+		       	str[b - 1] == '\n' ||
 			str[b - 1] == ',' ||
 			str[b - 1] == ';' ||
 			str[b - 1] == '.' ||
@@ -31,7 +31,6 @@ char *cap_string(char *str)
 		str[b] -= 32;
 
 		b++;
-	return (str);
 	}
 
 	return (str);
