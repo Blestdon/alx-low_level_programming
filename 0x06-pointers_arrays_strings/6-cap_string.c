@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes a string
+ * cap_string - capitalizes string
  * @str: string
- * Return: pointer to strings
+ * Return: pointer to string
  */
 char *cap_string(char *str)
 {
@@ -14,21 +14,20 @@ char *cap_string(char *str)
 		while (!(str[b] >= 'a' && str[b] <= 'z'))
 
 			b++;
-		if (str[b - 1] == ' ' ||
-			str[b - 1] == '\t' ||
-		       	str[b - 1] == '\n' ||
-			str[b - 1] == ',' ||
-			str[b - 1] == ';' ||
-			str[b - 1] == '.' ||
-			str[b - 1] == '!' ||
-			str[b - 1] == '?' ||
-			str[b - 1] == '"' ||
-			str[b - 1] == '(' ||
-			str[b - 1] == ')' ||
-			str[b - 1] == '{' ||
-			str[b - 1] == '}' ||
-			b == 0)
-		str[b] -= 32;
+		if (str[b - 1] == ' ' || str[b - 1] == '\t' ||
+				str[b - 1] == '\n' ||
+				str[b - 1] == ',' ||
+				str[b - 1] == ';' ||
+				str[b - 1] == '.' ||
+				str[b - 1] == '!' ||
+				str[b - 1] == '?' ||
+				str[b - 1] == '"' ||
+				str[b - 1] == '(' ||
+				str[b - 1] == ')' ||
+				str[b - 1] == '{' ||
+				str[b - 1] == '}' ||
+				b == 0)
+			str[b] -= 32;
 
 		b++;
 	}
