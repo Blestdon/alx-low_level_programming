@@ -2,6 +2,7 @@
 
 /**
  * main - Prints combination of 3 numbers
+ *
  * Return: 0 Always
  */
 int main(void)
@@ -16,19 +17,19 @@ int main(void)
 			{
 				if (a < d && d < h)
 				{
-					_putchar(a);
-					_putchar(d);
-					_putchar(h);
+					putchar(a);
+					putchar(d);
+					putchar(h);
 
 					if (a != '7')
 					{
-						_putchar(',');
-						_putchar(' ');
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
