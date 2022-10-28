@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * main: Prints 3 combination of numbers
- *
- * Return: Always 0
+ * main - Prints combination of 3 numbers
+ * Return: 0 Always
  */
 int main(void)
 {
@@ -17,19 +16,19 @@ int main(void)
 			{
 				if (a < d && d < h)
 				{
-					putchar(a);
-					putchar(d);
-					putchar(h);
+					_putchar(a);
+					_putchar(d);
+					_putchar(h);
 
 					if (a != '7')
 					{
-						putchar(',');
-						putchar(' ');
+						_putchar(',');
+						_putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
