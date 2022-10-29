@@ -3,11 +3,12 @@
 /**
  * print_number - prints any integer with putchar
  * @n: number to be printed
+ *
  * Return: Nothing
  */
 void print_number(int n)
 {
-	unsigned int b;
+	unsigned int x;
 
 	if (n < 0)
 	{
@@ -15,10 +16,10 @@ void print_number(int n)
 		n *= -1;
 	}
 
-	b = n;
+	x = n;
 
-	if (b / 10)
-		print_number(b / 10);
+	if (x / 10)
+		print_number(x / 10);
 
-	_putchar(b % 10 + '0');
+	_putchar(x % 10 + '0');
 }
