@@ -2,8 +2,8 @@
 
 /**
  * print_number - prints an integer
- * @n: num to print
- * return: 0
+ * @n: number to b printed
+ * Return: Nothing
  */
 void print_number(int n)
 {
