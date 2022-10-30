@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - prints the timeof the input.
- * @c: the value of the time table to be printed
+ * @n: the value of the time table to be printed
  */
 
 void print_times_table(int n)
@@ -13,19 +13,22 @@ void print_times_table(int n)
 		for (ta = 0; ta <= n; ta++)
 		{
 			_putchar('0');
+
 			for (ku = 1; ku <= n; ku++)
 			{
 				_putchar(',');
 				_putchar(' ');
+
 				asa =  ta * ku;
+
 				if (asa <= 99)
 					_putchar(' ');
 				if (asa <= 9)
 					_putchar(' ');
 
-				if (asa <= 200)
+				if (asa >= 100)
 				{
-					_putchar((asa / 100) + '0');
+					_putchari((asa / 100) + '0');
 					_putchar(((asa / 10)) % 10 + '0');
 				}
 				else if (asa <= 99 && asa >= 10)
@@ -33,9 +36,9 @@ void print_times_table(int n)
 					_putchar((asa / 10) + '0');
 				}
 				_putchar((asa % 10) + '0');
+
 			}
-			_putchar((asa % 10) + '0');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
