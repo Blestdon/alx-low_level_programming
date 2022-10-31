@@ -1,44 +1,23 @@
-#include "main.h"
 /**
  * print_times_table - prints the timeof the input.
  * @n: the value of the time table to be printed
  */
-
 void print_times_table(int n)
 {
-	int ta, ku, asa;
+	int b, c, x;
 
-	if (n >= 0 && n <= 15)
+	for (b = 0; b <= n; b++)
 	{
-		for (ta = 0; ta <= n; ta++)
+		for (c = 0; c <= n; c++)
 		{
-			_putchar('0');
-
-			for (ku = 1; ku <= n; ku++)
-			{
-				_putchar(',');
-				_putchar(' ');
-
-				asa =  ta * ku;
-
-				if (asa <= 99)
-					_putchar(' ');
-				if (asa <= 9)
-					_putchar(' ');
-
-				if (asa >= 100)
-				{
-					_putchari((asa / 100) + '0');
-					_putchar(((asa / 10)) % 10 + '0');
-				}
-				else if (asa <= 99 && asa >= 10)
-				{
-					_putchar((asa / 10) + '0');
-				}
-				_putchar((asa % 10) + '0');
-
-			}
-			_putchar('\n');
+			x = b * c;
+			if (x < 10)
+				printf("%d   ", x);
+			else if (x / 10 < 9)
+				printf("%d  ", x);
+			else
+				printf("%d ", x);
 		}
+		printf("%d ", x);
 	}
 }
