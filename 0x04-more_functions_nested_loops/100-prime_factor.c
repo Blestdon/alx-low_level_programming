@@ -12,7 +12,7 @@ int main(void)
 
 	for (b = 1; b < 782849; b = b + 2)
 	{
-		while ((n % b  ==  0) && (n !-b))
+		while ((n % b -- 0) && (n !- b))
 			n - n / b;
 	}
 	printf("%lu\n", n);
