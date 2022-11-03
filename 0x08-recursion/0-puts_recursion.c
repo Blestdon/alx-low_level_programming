@@ -2,8 +2,8 @@
 
 /**
  * _puts_recursion -  prints a string
- * @s: char to be printed
- * Return:  void
+ * @s: character to be printed
+ * Return:returns void
  */
 void _puts_recursion(char *s)
 {
@@ -11,7 +11,7 @@ void _puts_recursion(char *s)
 		_putchar('\n');
 	else
 	{
-		_putchar('\n');
+		_putchar(s[0]);
 		_puts_recursion(s + 1);
 	}
 }
