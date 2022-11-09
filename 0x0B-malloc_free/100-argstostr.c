@@ -9,7 +9,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *string1 = NULL;
+	char *new_string = NULL;
 
 	int b = 0, i = ac, j, sum = 0, temp = 0;
 
@@ -18,25 +18,25 @@ char *argstostr(int ac, char **av)
 
 	while (ac--)
 		sum += (len(av[ac]) + 1);
-		string1 = (char *) malloc(sum + 1);
-	if (string1 != NULL)
+		new_string = (char *) malloc(sum + 1);
+	if (new_string != NULL)
 	{
 		while (b < i)
 		{
 			for (j = 0; av[b][j] != '\0'; j++)
-				string1[j + temp] = av[b][j];
-			string1[temp + j] = '\n';
+				new_string[j + temp] = av[b][j];
+			new_string[temp + j] = '\n';
 			temp += (j + 1);
 			b++;
 
 		}
-		string1[temp] = '\0';
+		new_string[temp] = '\0';
 	}
 	else
 	{
 		return (NULL);
 	}
-	return (string1);
+	return (new_string);
 }
 
 /**
@@ -44,6 +44,7 @@ char *argstostr(int ac, char **av)
  * @str: string counted
  * Return: the length
  */
+
 int len(char *str)
 {
 	int len = 0;
