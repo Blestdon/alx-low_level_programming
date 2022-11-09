@@ -4,6 +4,7 @@
  * argstostr - concatenates all the arguments of your program.
  * @ac: count of args passed
  * @av: array of argumennts
+ *
  * Return: pointer to a new string, or NULL if it fails
  */
 char *argstostr(int ac, char **av)
@@ -36,4 +37,21 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 	return (string1);
+}
+
+/**
+ * len - returns length of str
+ * @str: string counted
+ * Return: the length
+ */
+int len(char *str)
+{
+	int len = 0;
+
+	if (str != NULL)
+	{
+		while (str[len])
+			len++;
+	}
+	return (len);
 }
