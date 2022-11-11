@@ -32,11 +32,11 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		if (temp_block != NULL)
 		{
 			for (j = 0; j < min(old_size, new_size); j++)
-				*((char *)temp_block +j) = *((char *) ptr + j);
+				*((char *)temp_block + j) = *((char *) ptr + j);
 			free(ptr);
 			return (temp_block);
 		}
 		else
-			retuurn (NULL)
+			return (NULL);
 	}
 }
