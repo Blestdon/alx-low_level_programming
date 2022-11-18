@@ -46,7 +46,8 @@ void print_float(va_list arg)
  */
 void print_string(va_list arg)
 {
-	char *str
+	char *str;
+
 		str = va_arg(arg, char *);
 	if (str == NULL)
 	{
@@ -78,7 +79,6 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-	
 	while (format && (*(format + i)))
 	{
 		k = 0;
@@ -87,7 +87,7 @@ void print_all(const char * const format, ...)
 		{
 			printf("%s", separator);
 			funcs[k].print(args);
-			separator = ", "
+			separator = ", ";
 		}
 		i++;
 	}
